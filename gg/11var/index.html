@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+<meta name="page_type" content="np-template-header-footer-from-plugin">
+</head>
+<body>
+    <header>
+        <div class="logo" style="float:left;">
+            <img src="img/logo.png">
+        </div>
+	<nav>
+		<ul class="menu">
+		  <li><a href="#!">Главная</a></li>
+		  <li><a href="#!">Автопарк</a></li>
+		  <li><a href="#!">Аренда</a></li>
+		  <li><a href="#!">Для бизнеса</a></li>
+		  <li><a href="#!">Контакты</a></li>
+		  <li><a href="#!">Личный кабинет</a></li>
+        <a href="#" target="_blank"><i class="fa fa-instagram" id="fa-2x" style="margin-left:100px;" ></i></a>
+        <a href="#" target="_blank"><i class="fa fa-facebook" id="fa-2x"></i></a>    
+        <a href="#" target="_blank"><i class="fa fa-vk" id="fa-2x"></i></a>    
+        <a href="#" target="_blank"><i class="fa fa-whatsapp" id="fa-2x"></i></a>
+        </ul>
+     </nav>
+     <div style=" border-top:  1px solid #ffffff91; margin-left:40%;">
+     <div class="bot-menu" style="margin-top:10px;">
+         <h1>8(995)-888-30-94</h1>
+         <img src="img/as.png" style="margin-left:15%;">
+         <img src="img/gp.png">
+        </div>
+    </div>
+</header>
+<div class="jquery-script-ads"><script type="text/javascript">
+    google_ad_client = "ca-pub-2783044520727903";
+    google_ad_slot = "2780937993";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    </script>
+    <script type="text/javascript"
+    src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script></div>
+    <div class="jquery-script-clear">
+        </div>
+    </div>
+    </div>
+    <div class="block-arenda" >
+        <h2 style="color: aliceblue; text-align: center; margin-left:46%; width:40px; margin-top: 140px;">Aренда</h2>
+        <h1 class="premium" style="text-align: center; ">ПРЕМИУМ АВТОМОБИЛИЙ</h1>
+    <div class="card-carousel" style="margin-top:80px;">
+      <div class="my-card"><img src="img/a6.png" width="100%" height="100%"></div>
+      <div class="my-card"><img src="img/a4.png" width="100%" height="100%"></div>
+      <div class="my-card"><img src="img/rx.png" width="100%" height="100%"></div>
+      <div class="my-card"><img src="img/x3.png" width="100%" height="100%"></div>
+      <div class="my-card"><img src="img/q5.png" width="100%" height="100%"></div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> 
+    <script>
+    $num = $('.my-card').length;
+    $even = $num / 2;
+    $odd = ($num + 1) / 2;
+    
+    if ($num % 2 == 0) {
+      $('.my-card:nth-child(' + $even + ')').addClass('active');
+      $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+      $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+    } else {
+      $('.my-card:nth-child(' + $odd + ')').addClass('active');
+      $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+      $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+    }
+    
+    $('.my-card').click(function() {
+      $slide = $('.active').width();
+      console.log($('.active').position().left);
+      
+      if ($(this).hasClass('next')) {
+        $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+      } else if ($(this).hasClass('prev')) {
+        $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+      }
+      
+      $(this).removeClass('prev next');
+      $(this).siblings().removeClass('prev active next');
+      
+      $(this).addClass('active');
+      $(this).prev().addClass('prev');
+      $(this).next().addClass('next');
+    });
+    
+    
+    // Keyboard nav
+    $('html body').keydown(function(e) {
+      if (e.keyCode == 37) { // left
+        $('.active').prev().trigger('click');
+      }
+      else if (e.keyCode == 39) { // right
+        $('.active').next().trigger('click');
+      }
+    });
+    </script>
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+  <div class="vid" style="background:black; display: inline-block; width: 100%; position: relative; height:650px;">
+      <h2 style="color: aliceblue; text-align: center;  margin-top:130px;">Виды</h2>
+      <h1 style="color: #EDC5A2; text-align: center; ">Аренды</h1>
+    <div class="kart" style="margin-top: 60px;">
+      <div style="height:280px; width:36%;">
+        <button class="btn">C ВОДИТЕЛЕМ</button>
+      <img style="height:280px; width:100%" src="img/bss.png">
+      
+    </div>
+    <div style="height:280px; width:36%">
+      <button class="btn" >ДЛЯ ОСОБЫХ ЦЕЛЕЙ</button>
+      <img style="height:280px; width:100%" src="img/svd.png">
+      
+    </div>
+    <div style="height:280px; width:36%">
+      <button class="btn">БЕЗ ВОДИТЕЛЯ</button>
+      <img style="height:280px; width:100%" src="img/mj.png">
+      </div>
+  </div>
+</div>
+
+
+<div class="vid" style="display: inline-block; width: 100%; position: relative; height: 699px;">
+  <h1 style="color: #EDC5A2; text-align: center;  margin-top:130px;">Автопарк</h1>
+  <div class="hhd">
+  <p>ПРЕМИУМ</p>
+  <p class="bords">БИЗНЕС</p>
+  <p>СПОРТ</p>
+</div>
+<div class="kart" style="margin-top: 60px;">
+  <div style="height:280px; width:36%;">
+    <button class="btn">ЗАКАЗАТЬ МАШИНУ</button>
+  <img style="height:280px; width:100%" src="img/1.png">
+  
+</div>
+<div style="height:280px; width:36%">
+  <button class="btn" >ЗАКАЗАТЬ МАШИНУ</button>
+  <img style="height:280px; width:100%" src="img/2.png">
+  
+</div>
+<div style="height:280px; width:36%">
+  <button class="btn">ЗАКАЗАТЬ МАШИНУ</button>
+  <img style="height:280px; width:100%" src="img/3.png">
+  </div>
+</div>
+</div>
+<div class="usl">
+  <p style="color: aliceblue; text-align: center; margin-top:130px;" >УСЛОВИЯ</p>
+  <h1 style="color: #EDC5A2; text-align: center; ">Аренды</h1>
+<div class="demo">
+  <input type="checkbox" id="hd-1" class="hide"/>
+  <label for="hd-1" >БРОНИРОВАНИЕ</label>
+  <div>
+  ----
+  </div>
+  <br>
+  <input type="checkbox" id="hd-2" class="hide"/>
+  <label for="hd-2">ПРАВИЛА АРЕНДЫ</label>
+  <div class="trex">
+    <p> -Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за пределы ЛО<br> согласовывается индивидуально.</p>
+    <p>-Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.</p>
+  <p>-Не передавать управление другому человеку без оформления на него договора аренды. 
+    При <br>желании вы можете бесплатно внести второго водителя в договор аренды.</p>
+    <p> -Не управлять транспортным средством в состоянии алкогольного опьянения.</p>
+    <p>-Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.</p>
+    <p>-Соблюдать чистоту и не курить в салоне автомобиля.</p>
+    <p>-Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с<br> салоном автомобиля.</p>
+    <p>-Вернуть автомобиль в целости, сохранности, технически исправным и чистым для<br> оперативного осмотра.</p>
+  </div>
+
+  <br>
+  <input type="checkbox" id="hd-3" class="hide"/>
+  <label for="hd-3" >ОБЕСПЕЧИТЕЛЬНЫЙ ПЛАТЕЖ</label>
+  <div class="trex">
+     ---
+  </div>
+
+  <br>
+  <input type="checkbox" id="hd-4" class="hide"/>
+  <label for="hd-4">СТРАХОВАНИЕ</label>
+  <div class="trex">
+     ---
+  </div>
+
+  <br>
+  <input type="checkbox" id="hd-5" class="hide"/>
+  <label for="hd-5">ДОСТАВКА И ВОЗВРАТ</label>
+  <div class="trex">
+     ---
+  </div>
+</div>
+</div>
+<div class="otz">
+  <h2 style="color: aliceblue; text-align: center; margin-left:46%; width:40px; margin-top: 140px;">Отзывы</h2>
+  <h1 class="jfj" style="text-align: center; ">Наших клиентов</h1>
+</div>
+<div class="contackt" style="margin-top: 80px;">
+  <div class="wrapper">
+    <h1 style="color: aliceblue;">Контакты</h1>
+
+    <div class="ico-wrap"> <i class="fa fa-map-marker ico-contact"></i>
+    </div>
+    <div class="descript-wrapper">
+        <p class="aio-icon-title">наш  адрес:</p>
+        <div class="aio-icon-description">
+          Санкт-Петербург, Таежная улица, 37
+    </div>
+
+    <span class="clearfix"></span>
+
+   
+
+    <div class="ico-wrap">
+        <i class="fa fa-envelope ico-contact"></i>
+    </div>
+    <div class="descript-wrapper">
+        <p class="aio-icon-title">наша почта:</p>
+        <div class="aio-icon-description">
+          galeoncar@internet.ru</div>
+    </div>
+
+    <span class="clearfix"></span>
+
+  
+</div>
+</div>
+</div>
+<footer style="margin-top:160px; display: inline-block; width:100%;  ">
+  <nav style="margin-right:5%;">
+		<ul class="menu">
+		  <li><a href="#!">Главная</a></li>
+		  <li><a href="#!">Автопарк</a></li>
+		  <li><a href="#!">Аренда</a></li>
+		  <li><a href="#!">Для бизнеса</a></li>
+		  <li><a href="#!">Контакты</a></li>
+		  <li><a href="#!">Личный кабинет</a></li>
+        </ul>
+     </nav>
+</footer>
+</body>
+</html>
