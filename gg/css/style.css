@@ -1,0 +1,305 @@
+/* external css: flickity.css */
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #15171E;
+  font-family: "Varela Round", sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  list-style: none;
+  margin-left:37%;
+  margin-top:1%;
+  height:45px;
+  
+}
+
+.menu li {
+  transition: background-position-x 0.9s linear;
+  
+}
+  a {
+    font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 140%;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.8;
+flex: none;
+order: 3;
+flex-grow: 0;
+margin: 0px 9px;
+text-decoration: none;
+  }
+
+  li:hover {
+    animation: line 1s;
+  }
+
+  li:hover a {
+    color: #EDC5A2;
+  }
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+#fa-2x{
+  max-width:3%;
+  padding:-5px;
+}
+
+.logo img{
+  width:150px;
+  margin-left:75%;
+  margin-top:6%;
+}
+.bot-menu{
+  color: #EDC5A2;
+  display: flex;
+ 
+}
+.bot-menu h1{
+  font-size:30px;
+}
+.bot-menu img{
+ width:12%;
+ margin-left:2%;
+}
+.block-arenda{
+  background-image: url("Fon.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  width:100%;
+  min-height: 700px;
+  margin-top:-40px;
+  display: inline-block;
+}
+.block-arenda:before {                      
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.card-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-carousel .my-card {
+  height: 20rem;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  cursor: pointer;
+  pointer-events: none;
+  transition: 1s;
+  background-size: cover;
+}
+.my-card img{
+  width:400px;
+  margin-left:-90px;
+  margin-right:-90px;
+}
+.card-carousel .my-card:after {
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+}
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.premium{
+  text-transform: uppercase;
+  color: #EDC5A2;
+  display: inline-block;
+  margin-left:22%;
+  font-size:60px;
+}
+.kart{
+  width:100%;
+  height:500px;
+  display: flex;
+}
+.btn {
+  margin-left:9%;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  position: absolute;
+  top: 60%;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+.hhd{
+  display:flex;
+  color:aliceblue;
+  width:90px;
+  margin:0 auto;
+  padding-right:18%;
+  margin-top:2%;
+}
+.bords{
+  border-left: 1px solid aliceblue;
+  border-right: 1px solid aliceblue;
+  margin-left:15px;
+  margin-right:15px;
+  padding-left:6px;
+  padding-right:6px;
+}
+.usl{
+  background-image: url("fon2.jpg");
+  height:900px;
+  background-repeat: no-repeat;
+  background-size:100%;
+  display: inline-block;
+  width: 100%;
+}
+
+.hide {
+  display: none; 
+}
+label{
+  font-size:14px;
+}
+.hide + label ~ div{
+  display: none;
+}
+
+.hide + label {
+  padding: 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block; 
+  
+}
+
+.hide:checked + label {
+  border-bottom: 0;
+  color: #FFFFFF;
+}
+
+.hide:checked + label + div {
+  display: block; 
+  padding: 10px; 
+  color: #FFFFFF;
+}
+
+.demo {
+  margin: 5% 10%;
+  line-height:26px;
+  max-width:59%;
+}
+.trex p{
+font-size:12px;
+}
+.trex{
+  
+}
+.jfj{
+  color: #EDC5A2;
+  font-size:34px;
+}
+.contackt{
+  background-image: url("fon3.png");
+}
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background:#232731;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.ico-wrap {
+    color: #ECAB00;
+    width: 50px;
+    height: 50px;
+    margin: 25px 20px 2px 2px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+}
+.ico-contact {
+    line-height: 1.9 !important;
+}
+.descript-wrapper {
+    float: left;
+    margin-bottom: 20px;
+}
+.aio-icon-title {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .descript-wrapper,
+    .ico-wrap {
+      float: none;
+      text-align: center;
+    }
+    .ico-wrap {
+      margin: 0 auto 15px auto;
+    }
+}
